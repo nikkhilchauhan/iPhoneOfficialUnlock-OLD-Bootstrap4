@@ -1,0 +1,259 @@
+.sectionOne{
+    background: url(../images/Desktop.png) no-repeat scroll;
+}
+
+.imei-stats-box{
+    /* border:1px solid #e5e5e5; */
+    opacity:.6;
+    }
+    
+ /* .imei-stats-box:hover{
+        border:2px solid #e5e5e5;
+        } */
+
+
+/* models section starts */
+.bg-cus {
+    background-color: #f0f0f0;
+}
+
+/* HIDE RADIO */
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio]+img {
+    cursor: pointer;
+}
+
+
+/* CHECKED STYLES */
+[type=radio]:checked+img {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #007bff;
+}
+.cus-thm-scl {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.cus-btn-sub {
+    border-radius: 25px;
+}
+input[value]:hover {
+    color: #fff67b !important;
+    transition: color .3s ease-in-out;
+}
+/* models section ends */
+
+
+/* features section strats */
+.gradient-bg-black {
+    background: #373737;
+    background: -webkit-gradient(linear, left top, right top, from(#555555), to(#373737));
+    background: linear-gradient(to right, #555555, #373737);
+}
+
+.single-thumb p {
+    color: #b3b3b3;
+}
+/* features section ends */
+
+/* video section starts */
+.offwhite-bg {
+    background-color: #eaeaea;
+}
+
+/*Order tracking starts*/
+.shipment {
+	width:100%;
+}
+span.line {
+    height: 5px;
+    width: 90px;
+    background-color:#98D091;
+    display: block;
+    position: absolute;
+    top: 28%;
+    left: 45%;
+}
+.confirm{
+	text-align:center;
+	width:20%;
+	position:relative;
+	float:left;
+	margin-left:5%;
+}
+.confirm .imgcircle , .process .imgcircle, .quality .imgcircle {
+	background-color:#019031;
+}
+.confirm span.line, .process span.line {
+	background-color:#98D091; 
+}
+.content3 p {
+	margin-left:-50%;
+	font-size:15px;
+	font-weight:600;
+} 
+.imgcircle {
+	height:50px;
+	width:50px;
+	border-radius:50%;
+	background-color:#7B8788;
+	position:relative;
+}
+.imgcircle img {
+	height:30px;
+	position:absolute;
+	top: 10px;
+	left: 10px;
+}
+.process{
+	position:relative;
+	width:20%;
+	text-align:center;
+	float:left;
+}
+.quality {
+	position:relative;
+	width:20%;
+	text-align:center;
+	float:left;
+}
+.dispatch{
+	position:relative;
+	width:20%;
+	text-align:center;
+	float:left;
+}
+.delivery{
+	position:relative;
+	width:20%;
+	text-align:center;
+	float:left;
+	margin-right:-9%;
+}
+.footer a, a:active {
+	color:grey;
+	text-decoration:none;
+	font-family: 'Tahoma', sans-serif;
+}
+.footer a:hover {
+	color:#00c4ff;
+	text-decoration:none;
+	transition:all 0.5s ease-in-out;
+}
+.footer {
+	margin-top:3%;
+	text-align:center;
+	font-weight:100;
+}
+.footer p {
+	color:grey;
+	font-size:15px;
+	font-family: 'Tahoma', sans-serif;
+	line-height:25px;
+}
+/*Order tracking ends*/
+
+/*Pricing starts*/
+.pricingdiv{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+  }
+  
+  .pricingdiv ul.theplan{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	color: white;
+	background: #007bff;
+	position: relative;
+	width: 250px; /* width of each table */
+	margin-right: 10px; /* spacing between tables */
+	margin-bottom: 1em;
+	transition: all .5s;
+  }
+  
+  .pricingdiv ul.theplan:hover{ /* when mouse hover over pricing table */
+	transform: scale(1.05);
+	transition: all .5s;
+	z-index: 100;
+	box-shadow: 0 0 10px gray;
+  }
+  
+  .pricingdiv ul.theplan li{
+	margin: 10px 20px;
+	position: relative;
+  }
+  
+  .pricingdiv ul.theplan li.title_main{
+	font-size: 150%;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+	border-bottom: 5px solid white;
+  }
+  .pricingdiv ul.theplan li.title{
+	font-size: 150%;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+  }
+  
+  .pricingdiv ul.theplan:last-of-type{ /* remove right margin in very last table */
+	margin-right: 0;
+  }
+  
+  /*very last LI within each pricing UL */
+  .pricingdiv ul.theplan li:last-of-type{
+	text-align: center;
+	margin-top: auto; /*align last LI (price botton li) to the very bottom of UL */
+  }  
+  
+  .pricingdiv a.pricebutton{
+	background: white;
+	text-decoration: none;
+	padding: 10px;
+	display: inline-block;
+	margin: 10px auto;
+	border-radius: 5px;
+	color: navy;
+	text-transform: uppercase;
+  }
+  
+  @media only screen and (max-width: 500px) {
+	.pricingdiv ul.theplan{
+	  border-radius: 0;
+	  width: 100%;
+	  margin-right: 0;
+	}
+	
+	.pricingdiv ul.theplan:hover{
+	  transform: none;
+	  box-shadow: none;
+	}
+	
+	.pricingdiv a.pricebutton{
+	  display: block;
+	}
+	/*Pricing Ends*/
+
+/* footer section starts */
+.ft-social-clr {
+    color: #ffffff;
+}
+
+.copyright-clr {
+    color: #deecfe;
+}
+/* footer section ends */

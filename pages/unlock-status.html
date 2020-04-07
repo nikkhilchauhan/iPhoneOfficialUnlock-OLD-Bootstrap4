@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!---InSheet CSS-->
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+        .product-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.product-card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.product-card button:hover {
+  opacity: 0.7;
+}
+.desc-heading{
+  border-radius: 3.5rem;
+  padding: 8px;
+  border: 2px solid #666;
+  color: #666;
+}
+    </style>
+
+    <title>Unlock Status</title>
+  </head>
+  <body>
+
+        <!-- navigation starts -->
+        <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top text-light gradient-bg border-bottom shadow-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="../images/Main_logo.png" width="225" height="55" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                                </button>
+    
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-txt-clr">
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item px-3 active">
+                            <a class="nav-link" href="#">Unlock Status</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="./icloud-unlock.html">iCloud Unlock</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="./network-check.html">Network Check</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="./pricelist.html">Pricelist</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./repair.html">Repair</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+            <!-- navigation ends -->
+
+
+            <!-- Unlock Status section starts -->
+      <section class="unlock pt-5 container">
+            <div class="row pt-5">
+
+                  <!--enter imei-->
+                <div class="col-md-6">
+                    <h1 class="text-dark">Check your unlock status</h1>
+                    <p class="text-secondary">Enter your IMEI number to check the unlock progress of your device.</p>
+                    <form action="" method="post" class="row pb-5 d-flex align-items-center">
+                            <div class="col-md-8 mb-4 mb-md-0"><input type="text" class="w-100 border rounded px-4 py-3 shadow-sm" placeholder="Enter IMEI"></div>
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-primary py-3" data-toggle="modal" data-target="#imeiReportModal">Check</button>
+                             </div>
+                    </form>
+                </div>
+                 <!--order status-->
+                <div class="col-md-6">
+                        <h1 class="pt-2 pb-2 text-dark h3">Real-time order tracker</h1>
+                        <p class="text-secondary">Our team will email you once your iPhone unlock request is completed.</p>
+                      <div>
+                         <!-------------->
+                            <div class="content3">
+                                    <div class="shipment">
+                                        <div class="confirm">
+                                            <div class="imgcircle">
+                                                <img src="../images/confirm.png" alt="confirm order">
+                                            </div>
+                                            <span class="line"></span>
+                                            <p>Ordered</p>
+                                        </div>
+                                        <div class="process">
+                                                <div class="imgcircle">
+                                                <img src="../images/process.png" alt="process order">
+                                            </div>
+                                            <span class="line"></span>
+                                            <p>Sent-to-Apple</p>
+                                        </div>
+                                        <div class="quality">
+                                                <div class="imgcircle">
+                                                    <img src="../images/quality.png" alt="quality check">
+                                                </div>
+                                                <span class="line"></span>
+                                                <p>Processing</p>
+                                            </div>
+                                        <div class="delivery">
+                                            <div class="imgcircle">
+                                                <img src="../images/delivery.png" alt="delivery">
+                                            </div>
+                                            <p>Delivered</p>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            <!-------------->
+                     </div>
+                </div>
+
+            </div>
+     </section>
+    <!-- Unlock Status section ends -->
+
+
+    <!-- Unlock_status_Disc Starts-->
+    <div class="container text-center py-3">
+            <h3 mb-3>After order is delivered sucessfully</h3>
+        <div class="row text-center">
+            <div class="col-lg-4">
+                <img src="../images/icons8-one.png" alt="">
+                <p>Once you get your device unlock confirmation mail, just insert a <b>New Activated Sim</b> in your device.</p>
+            </div>
+            <div class="col-lg-4">
+                    <img src="../images/icons8-two.png" alt="">
+                <p>Now connect your device to Apple's iTune which will complete the unlock process.</p>
+            </div>
+            <div class="col-lg-4">
+                    <img src="../images/icons8-three.png" alt="">
+                    <p>You're All done. If stuck please feel free to contact our support team.</p>
+                </div>
+        </div>
+    </div>
+    <!-- Unlock_status_Disc Ends-->
+
+    <!--Google Reviews STARTS-->
+    <div class="container py-2">
+            <div id="carouselId1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <!--review-1-->
+                    <div class="carousel-item active">
+                            <div class="inner-item px-3">
+                                <div class="row justify-content-center">
+                                    <div class="col-4 text-center">
+                                        <figure class="mb-md-0"><img src="../images/avatar-male2.png" alt="" class="img-fluid rounded-circle"></figure>
+                                        <p class="mb-md-0 font-weight-bold">John Doe</p>
+                                        <img src="../images/Google_icon.png" width="80" height="20" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="font-weight-bold">Lorem, ipsum.</h5>
+                                        <div class="stars text-primary">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. incididunt ut labore et dolore magna. aliqua. Ut enim ad minim veniam, quis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--review-2-->
+                        <div class="carousel-item">
+                            <div class="inner-item px-3">
+                                <div class="row justify-content-center">
+                                    <div class="col-4 text-center">
+                                        <figure class="mb-md-0"><img src="../images/avatar-male2.png" alt="" class="img-fluid rounded-circle"></figure>
+                                        <p class="mb-md-0 font-weight-bold">John Doe</p>
+                                        <img src="../images/Google_icon.png" width="80" height="20" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="font-weight-bold">Lorem, ipsum.</h5>
+                                        <div class="stars text-primary">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. incididunt ut labore et dolore magna. aliqua. Ut enim ad minim veniam, quis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--review-3-->
+                        <div class="carousel-item">
+                            <div class="inner-item px-3">
+                                <div class="row justify-content-center">
+                                    <div class="col-4 text-center">
+                                        <figure class="mb-md-0"><img src="../images/avatar-male2.png" alt="" class="img-fluid rounded-circle"></figure>
+                                        <p class="mb-md-0 font-weight-bold">John Doe</p>
+                                        <img src="../images/Google_icon.png" width="80" height="20" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="font-weight-bold">Lorem, ipsum.</h5>
+                                        <div class="stars text-primary">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. incididunt ut labore et dolore magna. aliqua. Ut enim ad minim veniam, quis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+                <ol class="carousel-indicators position-relative">
+                    <li data-target="#carouselId1" data-slide-to="0" class="bg-info active"></li>
+                    <li data-target="#carouselId1" data-slide-to="1" class="bg-info"></li>
+                    <li data-target="#carouselId1" data-slide-to="2" class="bg-info"></li>
+                </ol>
+            </div>
+
+    </div>
+    <!--Google review Ends-->
+
+    <!--Shop Starts-->
+    <div class="container">
+        <hr>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div class="sec-title">
+                        <h3 class="text-dark pb-2">You may also like</h3>
+                    </div>
+                </div>
+            </div>
+          <div class="row text-center">
+              <div class="col-md-4 mb-3">
+                  <div class="product-card">
+                        <img src="../images/dataCable.jpg" alt="Denim Jeans" style="width:100%">
+                         <h4>Data Cable</h4>
+                         <p class="price">$19.99</p>
+                         <p><button>Buy now</button></p>
+                  </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                    <div class="product-card">
+                            <img src="../images/simCard.jpg" alt="Denim Jeans" style="width:100%">
+                             <h4>Ultra Sim</h4>
+                             <p class="price">$19.99</p>
+                             <p><button>Buy now</button></p>
+                      </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                    <div class="product-card">
+                            <img src="../images/simMouse.jpg" alt="Denim Jeans" style="width:100%">
+                             <h4>Wireless Card</h4>
+                             <p class="price">$19.99</p>
+                             <p><button>Buy now</button></p>
+                      </div>
+              </div>
+          </div>
+         </div>
+    <!--Shop Ends-->
+
+<!-- featured magazine Starts -->
+<section class="bg-light">
+        <div class="container">
+        <div class="row justify-content-center align-items-center text-center pt-4 pb-5">
+        <div class="col-12">
+        <h2 class="text-dark pb-4">Featured in Magazines</h2>
+        </div>
+        <div class="col-md-2">
+        <figure class="mb-lg-0"><img src="../images/800px-CNN.svg.png" alt="" class="img-fluid"></figure>
+        </div>
+        <div class="col-md-2">
+        <figure class="mb-lg-0"><img src="../images/forbes.png" alt="" class="img-fluid"></figure>
+        </div>
+        <div class="col-md-2">
+        <figure class="mb-lg-0"><img src="../images/Telegraph_logo.svg.png" alt="" class="img-fluid"></figure>
+        </div>
+        <div class="col-md-2">
+        <figure class="mb-lg-0"><img src="../images/The_Verge_wordmark.svg.png" alt="" class="img-fluid"></figure>
+        </div>
+        <div class="col-md-2">
+        <figure class="mb-lg-0"><img src="../images/tech-c.png" alt="" class="img-fluid"></figure>
+        </div>
+        </div>
+        </div>
+        </section>
+        <!-- featured magazine Ends -->
+
+       <!-- footer section -->
+       <footer class="gradient-bg pt-5 pb-3 bg-dark">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-12 col-lg-9 order-lg-12">
+                        <div class="row small">
+                            <div class="col-6 pb-3">
+                                <div class="footer-single text-center text-lg-left">
+                                    <!--------->
+                                    <p class="mb-0"><a href="./faq.html" class="text-light">FAQ</a></p>
+                                    <p class="mb-0"><a href="#" class="text-light">Unlock iPhone</a></p>
+                                    <p class="mb-0"><a href="./unlock-status.html" class="text-light">My Unlock Status</a></p>
+                                    <p class="mb-0"><a href="./icloud-unlock.html" class="text-light">iCloud Unlock</a></p>
+                                    <p class="mb-0"><a href="./network-check.html" class="text-light">Free Network Check</a></p>
+                                    <p class="mb-0"><a href="./shop.html" class="text-light">Shop with Us</a></p>
+                                </div>
+                            </div>
+                          <!------>
+                            <div class="col-6 pb-3">
+                                <div class="footer-single text-center text-lg-left">
+                                        <p class="mb-0"><a href="./contact-us.html" class="text-light">Contact</a></p>
+                                        <p class="mb-0"><a href="./about_us.html" class="text-light">About</a></p>
+                                        <p class="mb-0"><a href="" class="text-light">Refund policy</a></p>
+                                        <p class="mb-0"><a href="" class="text-light">Disclaimer</a></p>
+                                        <p class="mb-0"><a href="" class="text-light">Privacy policy</a></p>
+                                        <p class="mb-0"><a href="" class="text-light">Terms & Conditions</a></p>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="col-md-6 col-lg-3 text-center text-lg-left">
+                        <div class="d-flex flex-column justify-content-between">
+                            <h1 class="mb-md-0"><a class="navbar-brand text-light" href="#">iPhoneOfficialUnlock.com</a></h1>
+                            <div class="py-3">
+                                <img src="../images/payment_icon.png" height="25" width="230" alt="">
+                            </div>
+                            <p class="mb-md-0 copyright-clr">Copyright ©20072019 CompanyName</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!--SECTION ENDS Footer-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
